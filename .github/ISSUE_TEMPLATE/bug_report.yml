@@ -1,0 +1,35 @@
+name: Bug report
+description: Report a problem with one of the final-foursight services
+labels: [bug]
+body:
+  - type: dropdown
+    id: repo
+    attributes:
+      label: Affected repo
+      options:
+        - final-foursight-data
+        - final-foursight-modeling
+        - final-foursight-sim
+        - final-foursight-api
+        - final-foursight-web
+        - final-foursight-infrastructure
+        - final-foursight-brand
+        - Not sure / spans multiple
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: What did you expect, and what happened instead?
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Steps to reproduce
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant logs or output
+      render: shell

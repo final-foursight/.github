@@ -1,0 +1,29 @@
+name: Feature request
+description: Suggest an idea for one of the final-foursight services
+labels: [enhancement]
+body:
+  - type: dropdown
+    id: repo
+    attributes:
+      label: Affected repo
+      options:
+        - final-foursight-data
+        - final-foursight-modeling
+        - final-foursight-sim
+        - final-foursight-api
+        - final-foursight-web
+        - final-foursight-infrastructure
+        - final-foursight-brand
+        - Not sure / spans multiple
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem does this solve?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution

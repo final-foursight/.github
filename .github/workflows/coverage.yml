@@ -9,6 +9,11 @@ on:
 jobs:
   coverage:
     runs-on: ubuntu-latest
+    env:
+      # The reaper container exists to clean up leftover containers after a
+      # crashed run; on a GitHub-hosted runner the whole VM is destroyed
+      # after the job anyway, so it has nothing to do here.
+      TESTCONTAINERS_RYUK_DISABLED: "true"
     steps:
       - uses: actions/checkout@v4
       - uses: astral-sh/setup-uv@v5

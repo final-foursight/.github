@@ -6,13 +6,13 @@ A college basketball bracketology project. This directory is the parent workspac
 
 | Repo | Layer | Responsibility |
 |---|---|---|
-| [`final-foursight-data`](./final-foursight-data) | Data engineering | Ingestion, validation, cleaning, feature engineering, and storage of all NCAA basketball data. Single source of truth for the rest of the project. |
-| [`final-foursight-modeling`](./final-foursight-modeling) | Statistical modeling | Trains and evaluates predictive models (team strength, win probability, tournament selection, seeding, free throw models, etc.) using data from `final-foursight-data`. |
-| [`final-foursight-sim`](./final-foursight-sim) | Simulation engine | Runs Monte Carlo simulations of games, seasons, conference tournaments, Selection Sunday, and the NCAA Tournament using the trained models. |
-| [`final-foursight-api`](./final-foursight-api) | Backend API | Exposes data, model predictions, and simulation results via a REST API for the web app and other consumers. |
-| [`final-foursight-web`](./final-foursight-web) | Frontend | User-facing interface: bracket projections, team pages, simulations, visualizations, and interactive tools. |
-| [`final-foursight-infrastructure`](./final-foursight-infrastructure) | Platform engineering | Shared CI/CD, Docker, Terraform, deployment scripts, and reusable project templates. No business logic. |
-| [`final-foursight-brand`](./final-foursight-brand) | Brand/design | Logo, color, typography, and brand guidelines. Source of truth for design assets; consumers copy in production-ready exports rather than referencing it live. |
+| [`final-foursight-data`](https://github.com/final-foursight/final-foursight-data) | Data engineering | Ingestion, validation, cleaning, feature engineering, and storage of all NCAA basketball data. Single source of truth for the rest of the project. |
+| [`final-foursight-modeling`](https://github.com/final-foursight/final-foursight-modeling) | Statistical modeling | Trains and evaluates predictive models (team strength, win probability, tournament selection, seeding, free throw models, etc.) using data from `final-foursight-data`. |
+| [`final-foursight-sim`](https://github.com/final-foursight/final-foursight-sim) | Simulation engine | Runs Monte Carlo simulations of games, seasons, conference tournaments, Selection Sunday, and the NCAA Tournament using the trained models. |
+| [`final-foursight-api`](https://github.com/final-foursight/final-foursight-api) | Backend API | Exposes data, model predictions, and simulation results via a REST API for the web app and other consumers. |
+| [`final-foursight-web`](https://github.com/final-foursight/final-foursight-web) | Frontend | User-facing interface: bracket projections, team pages, simulations, visualizations, and interactive tools. |
+| [`final-foursight-infrastructure`](https://github.com/final-foursight/final-foursight-infrastructure) | Platform engineering | Shared CI/CD, Docker, Terraform, deployment scripts, and reusable project templates. No business logic. |
+| [`final-foursight-brand`](https://github.com/final-foursight/final-foursight-brand) | Brand/design | Logo, color, typography, and brand guidelines. Source of truth for design assets; consumers copy in production-ready exports rather than referencing it live. |
 
 ## Data flow
 

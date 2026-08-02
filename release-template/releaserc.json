@@ -7,6 +7,9 @@
         },
         "version_toml": [
             "pyproject.toml:project.version"
+        ],
+        "version_variables": [
+            "README.md:message:tf"
         ]
     }
 }

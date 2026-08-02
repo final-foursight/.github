@@ -1,0 +1,12 @@
+{
+    "semantic_release": {
+        "branches": {
+            "main": {
+                "match": "main"
+            }
+        },
+        "version_toml": [
+            "pyproject.toml:project.version"
+        ]
+    }
+}
